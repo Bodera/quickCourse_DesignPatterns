@@ -35,8 +35,6 @@ This content is organized into four sections.
   - Template Method
   - Visitor
 
-This are all records from my learning experience with the Design Patterns in Java course from Dmitri Nesteruk. If you find it useful, consider purchasing to grant lifetime access, a certification and help the Instructor.
-
 These are all records of my learning experience with [Dmitri Nesteruk's](https://uk.linkedin.com/in/dmitri-nesteruk-87b069aa) [Design Patterns in Java course](https://www.udemy.com/course/design-patterns-java/).
 
 If you find this content useful, consider purchasing the course to ensure lifetime access, a certification and help support the author.
