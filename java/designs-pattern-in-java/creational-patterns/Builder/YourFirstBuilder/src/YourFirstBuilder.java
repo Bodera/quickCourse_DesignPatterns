@@ -1,13 +1,13 @@
 import static java.lang.String.format;
 import static java.lang.String.join;
 import java.util.ArrayList;
-import java.util.stream.Stream;
+import java.util.List;
 import java.util.Collections;
 
 class HtmlElement
 {
     public String name, text;
-    public ArrayList<HtmlElement> elements = new ArrayList<>();
+    public List<HtmlElement> elements = new ArrayList<>();
     private final int indentSize = 2;
     private final String newLine = System.lineSeparator();
 
