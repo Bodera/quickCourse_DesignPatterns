@@ -1,7 +1,23 @@
 class Person 
 {
-    public String name;
-    public String position;
+    private String name = "";
+    private String position = "";
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
 
     @Override
     public String toString() {
@@ -17,7 +33,7 @@ class PersonBuilder<SELF extends PersonBuilder<SELF>>
 
     public SELF withName(String name) 
     {
-        person.name = name;
+        person.setName(name);
         return self();
     }
 
@@ -37,7 +53,7 @@ class EmployeeBuilder
 {
     public EmployeeBuilder worksAt(String position)
     {
-        person.position = position;
+        person.setPosition(position);
         return self();
     }
 

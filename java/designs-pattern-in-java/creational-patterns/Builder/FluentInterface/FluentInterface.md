@@ -209,7 +209,7 @@ Like this we're simply specifying that whenever somebody wants a `self()` outsid
 
 Lets check the output we get if run this now: `Person{name = 'Grigori', position = 'ML Engineet at Yandex'}`.
 
-Now we're getting the correct output. So the take away from this example is that if you want a fluent interface to propagate across inheritance hierarchies then what you need to do is, you need to have recursive generic definition so instead of just having a `PersonBuilder` you have a `PersonBuilder` which takes a type argument `SELF` which extends `PersonBuilder` and for every kind of inheritor what you do is, you stick that inheritor as a type argument of `PersonBuilder` thereby propagating this idea of always returning a type reference to the most derived type that you're working with.
+Now we're getting the correct output. So the take away from this example is that if you want a fluent interface to propagate across inheritance hierarchies then what you need to do is, you need to have recursive generic definition so instead of just having a `PersonBuilder` you have a `PersonBuilder` which takes a type argument `<SELF>` which extends `PersonBuilder` and for every kind of inheritor what you do is, you stick that inheritor as a type argument of `PersonBuilder` thereby propagating this idea of always returning a type reference to the most derived type that you're working with.
 
 ```bash
 $ cd src/
