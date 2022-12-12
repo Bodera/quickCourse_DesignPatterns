@@ -2,6 +2,12 @@
 
 In this section of the course we're going to talk about factories and also going to cover two Gang of Four Design Patterns, we're going to cover the factory method as well as the abstract factory.
 
+Suggested order to follow the lessons on this chapter:
+
+- Factory Method
+- Factory
+- Abstract Factory
+
 ## Motivation
 
 - Object creation logic becomes too convoluted

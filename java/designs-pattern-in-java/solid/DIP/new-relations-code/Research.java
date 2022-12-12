@@ -28,6 +28,11 @@ interface RelationshipBrowser
 
 class Relationships implements RelationshipBrowser
 {
+    //2022-12-06
+    //the use of Triplets is for illustration purpose and tuples should be handled carefully in Java
+    //we could reach similar effect of this external library using native API like Map<Person, Entry<Relationship, Person>>, but again, such data structure most be used wisely
+    //thoughs I came trhough after reading: http://mail.openjdk.java.net/pipermail/core-libs-dev/2010-March/003973.html
+
     //low-level & Single Responsability (retrieve data)
     private List<Triplet<Person, Relationship, Person>> relations = new ArrayList<>();
 
