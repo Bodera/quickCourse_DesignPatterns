@@ -35,3 +35,9 @@ Then we're going to talk about factorise proper, the thing is that a factory doe
 Now there is also a slightly more complicated scenario where you have a hierarchy of objects that you want to create and you want to have a corresponding hierarchy of factories related to those objects and that is represented by the abstract factory design pattern.
 
 So what is a factory im simple terms? Well quite simply a factory is a component whose sole responsibility is the wholesale creation of objects.
+
+## Summary
+
+Let's try to summarize some of the things we learned about factories. First of all we looked at **Factory Method** which has basically the idea that you take your existing object and provides a static method that actually creates this particular object and already it has some advantages compared to a simple constructor. Then of course you can make a separate factory so you can make a separate class which takes care of the creation of some object. Plus it's up to you to decide if your factory will be completely external class or an inner class, the advantages to having an inner class is to be able to access private members of a particular object.
+
+In addition we talked about hierarchies of factories that can be used to create related objects.
