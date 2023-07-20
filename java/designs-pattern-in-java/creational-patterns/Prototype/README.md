@@ -11,3 +11,5 @@ So essentially the prototype is an object which can be partially or fully constr
 Another important thing is that we've to provide an API, let's say a _Factory_ for instance, to make the cloning of existing objects a convenient affair.
 
 In resume a protoype is a partially or fully initialized object that you make a copy of, and then you subsequently use for your own benefit.
+
+- [Why not use cloeable](./Why-Not-Use-Cloneable.md)
