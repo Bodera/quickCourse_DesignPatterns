@@ -80,7 +80,7 @@ class Address implements Cloneable
     ...
 
     //shallow copy
-    @Overrite
+    @Override
     public Object clone() throws CloneNotSupportedException
     {
         return super.clone();
@@ -94,7 +94,7 @@ class Address implements Cloneable
     ...
 
     //deep copy
-    @Overrite
+    @Override
     public Object clone() throws CloneNotSupportedException
     {
         return new Address(streetName, houseNumber);
@@ -107,7 +107,7 @@ class Person implements Cloneable
 {
     ...
 
-    @Overrite
+    @Override
     public Object clone() throws CloneNotSupportedException
     {
         return new Person(names.clone(), (Address) address.clone());
