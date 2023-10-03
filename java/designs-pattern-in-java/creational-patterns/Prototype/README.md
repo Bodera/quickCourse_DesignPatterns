@@ -13,3 +13,4 @@ Another important thing is that we've to provide an API, let's say a _Factory_ f
 In resume a protoype is a partially or fully initialized object that you make a copy of, and then you subsequently use for your own benefit.
 
 - [Why not use cloneable](./Why-Not-Use-Cloneable.md)
+- [Use copy constructors instead](./Copy-Constructors.md)
