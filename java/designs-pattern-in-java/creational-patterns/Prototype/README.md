@@ -1,4 +1,4 @@
-# README
+# Prototype
 
 In this section of the course we're going to take a look at the _Prototype_ design pattern and how it's all about object copying because it's easier to copy an existing object instead of fully initialize a new one. So we're going to delve deep into the replication of objects.
 
