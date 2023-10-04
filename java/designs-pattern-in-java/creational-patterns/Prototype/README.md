@@ -15,3 +15,9 @@ In resume a protoype is a partially or fully initialized object that you make a 
 - [Why not use cloneable](./Why-Not-Use-Cloneable.md)
 - [Use copy constructors instead](./Copy-Constructors.md)
 - [Copy constructors pitfalls](./Copy-Through-Serialization.md)
+
+## Summary
+
+First of all we saw that to implement a `Prototype` all you have to do is basically create a mechanism so that you can fully create or partially create an object so you can store it somewhere to replicate it.
+
+We also studied some strategies to perform cloning, by implementing our own deep copy functionality or taking the object graph serializing and deserializing it.
