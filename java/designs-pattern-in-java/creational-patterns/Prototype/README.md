@@ -14,3 +14,4 @@ In resume a protoype is a partially or fully initialized object that you make a 
 
 - [Why not use cloneable](./Why-Not-Use-Cloneable.md)
 - [Use copy constructors instead](./Copy-Constructors.md)
+- [Copy constructors pitfalls](./Copy-Through-Serialization.md)
