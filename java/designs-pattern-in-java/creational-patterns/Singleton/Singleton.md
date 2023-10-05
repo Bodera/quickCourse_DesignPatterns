@@ -12,7 +12,7 @@ What we're going to inspect are the problems that *Singleton* has and ways to ov
 
 ## Motivation
 
-The motivation for using this pattern is due by some components that are unique for whole system. 
+The motivation for using this pattern is due by some components that are unique for whole system lyfecycle. 
 
 - Database repository
 
