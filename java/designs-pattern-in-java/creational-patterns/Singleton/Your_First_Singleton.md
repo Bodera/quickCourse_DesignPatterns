@@ -104,8 +104,8 @@ class Demo
 And that's the output this program produces:
 
 ```bash
-10
 100
+1000
 ```
 
 There are of course a lot of issues with our singleton as we're going to take a look soon at the subsequent lessons but this is the simplest approach that in fact works. The idea here to implement a _Singleton_ here is to make a private constructor so nobody can instantiate it, and then providing a static final instance of that object, the one and only one instance that we're ever going to expose.

@@ -1,3 +1,16 @@
+class YourFirstSingleton
+{
+    public static void main(String[] args)
+    {
+        BasicSingleton carrier = BasicSingleton.getInstance();
+
+        System.out.println(carrier.getSecret());
+
+        carrier.setSecret(carrier.getSecret() * 10);
+        System.out.println(carrier.getSecret());
+    }
+}
+
 class BasicSingleton
 {
     private BasicSingleton()
@@ -21,18 +34,5 @@ class BasicSingleton
     public void setSecret(int secret)
     {
         this.secret = secret;
-    }
-}
-
-class YourFirstSingleton
-{
-    public static void main(String[] args)
-    {
-        BasicSingleton carrier = BasicSingleton.getInstance();
-
-        System.out.println(carrier.getSecret());
-
-        carrier.setSecret(carrier.getSecret() * 10);
-        System.out.println(carrier.getSecret());
     }
 }
