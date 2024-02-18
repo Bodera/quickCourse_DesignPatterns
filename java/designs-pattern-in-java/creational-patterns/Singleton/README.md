@@ -7,3 +7,4 @@ Suggested order to read those chapters:
 - [Serialization Problems](./Serialization_Problems.md)
 - [Singleton and Threads](./Singleton_And_Threads.md)
 - [Inner Static Singleton](./Inner_Static_Singleton.md)
+- [Enum Based Singleton](./Enum_Based_Singleton.md)
