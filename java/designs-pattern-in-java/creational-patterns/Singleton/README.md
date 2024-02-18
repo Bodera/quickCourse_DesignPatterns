@@ -9,3 +9,4 @@ Suggested order to read those chapters:
 - [Inner Static Singleton](./Inner_Static_Singleton.md)
 - [Enum Based Singleton](./Enum_Based_Singleton.md)
 - [Monostate](./Monostate.md)
+- [Multiton](./Multiton.md)
