@@ -10,3 +10,4 @@ Suggested order to read those chapters:
 - [Enum Based Singleton](./Enum_Based_Singleton.md)
 - [Monostate](./Monostate.md)
 - [Multiton](./Multiton.md)
+- [Testability Issues](Testability_Issues.md)
