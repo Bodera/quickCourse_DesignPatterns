@@ -12,7 +12,12 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-class SingletonDatabase
+interface Database
+{
+    int getPopulation(String cityName);
+}
+
+class SingletonDatabase implements Database
 {
     private Dictionary<String, Integer> capitals = new Hashtable<>();
     private static int instanceCount = 0; //only for illustration purpose
@@ -81,15 +86,56 @@ class SingletonRecordFinder
     }
 }
 
-class TestingIssuesWithSingleton
+class ConfigurableRecordFinder
+{
+    private Database database;
+
+    public ConfigurableRecordFinder(Database database)
+    {
+        this.database = database;
+    }
+
+    public int getTotalPopulation(List<String> cityNames)
+    {
+        int result = cityNames
+            .stream()
+            .mapToInt(city -> database.getPopulation(city))
+            .sum();
+
+        return result;
+    }
+}
+
+class DummyDatabase implements Database
+{
+    private Dictionary<String, Integer>
+        data = new Hashtable<>();
+
+    public DummyDatabase()
+    {
+        data.put("alpha", 110);
+        data.put("beta", 120);
+        data.put("gamma", 130);
+    }
+
+    @Override
+    public int getPopulation(String cityName)
+    {
+        return data.get(cityName);
+    }
+}
+
+class DependencyInjectionWithSingleton
 {
     @Test
-    void getTotalPopulation()
+    void dependentPopulationTest()
     {
-        //this behaves like an integration test and not as an unit test
-        SingletonRecordFinder rf = new SingletonRecordFinder();
-        List<String> cities = List.of("Seoul", "Mexico City");
-        int totalPop = rf.getTotalPopulation(cities);
-        assertEquals(34900000, totalPop);
+        DummyDatabase database = new DummyDatabase();
+        ConfigurableRecordFinder confRecFinder = 
+            new ConfigurableRecordFinder(database);
+
+        assertEquals(250, confRecFinder.getTotalPopulation(
+            List.of("beta", "gamma")
+        ));
     }
 }
