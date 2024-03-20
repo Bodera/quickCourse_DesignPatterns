@@ -13,7 +13,7 @@ This content is organized into four sections.
   - Factories (Factory Method and Abstract Factory)
   - Prototype
   - Singleton
-- Structrural Design Patterns
+- Structural Design Patterns
   - Adapter
   - Bridge
   - Composite
