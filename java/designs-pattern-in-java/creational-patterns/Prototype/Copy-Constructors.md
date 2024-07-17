@@ -90,4 +90,4 @@ public class Demo
 }
 ```
 
-So the take away from this example is that one of the more palatable ways of explicitly specifying that an object is copyable is to provide a copy constructor, this is way better than implementing the `Cloneable` interface for example.
+So the takeaway from this example is that one of the more palatable ways of explicitly specifying that an object is copyable is to provide a copy constructor, this is way better than implementing the `Cloneable` interface for example.

@@ -1,6 +1,6 @@
 # Copy Through Serialization
 
-One of the really big problems that we may encounter when using the copy constructors is that you have to build a copy constructor for every single type that ypu have. And if you have a hierarchy of 20 different types for example, you have to make 20 different copy constructors. That's because otherwise one of those objects will not be copied correctly, it will not perform a deep copy it will perform a shalow copy instead, and that's not the desirable behavior that we want.
+One of the massive problems that we may encounter when using the copy constructors is that you have to build a copy constructor for every single type that you have. And if you have a hierarchy of 20 different types for example, you have to make 20 different copy constructors. That's because otherwise one of those objects will not be copied correctly, it will not perform a deep copy it will perform a shallow copy instead, and that's not the desirable behavior that we want.
 
 So the question of one million dollars is: given the complicated hierarchy of types how can you actually copy those objects without jumping through the hoops and implementing series of copy constructors? Well why not to use serialization for that?
 
@@ -34,9 +34,9 @@ class Foo implements Serializable
 ```
 
 The next step is take this object and perform a deep copy of it using serialization.
-org.apache.commons.lang3.SerializationUtils
-
 ```java
+import org.apache.commons.lang3.SerializationUtils;
+
 class Demo
 {
     public static void main(String[] args)
