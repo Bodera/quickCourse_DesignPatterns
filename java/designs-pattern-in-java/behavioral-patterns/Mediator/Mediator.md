@@ -274,11 +274,11 @@ The coach congratulates Antony for scoring 2 goals!
 
 This is a small illustration on how you can use reactive extensions instead of rolling your own observer classes in order to create a mediator which allows you to supply values.
 
-Reactive extensions is an extremely powerful API for actually filtering events and getting just the sequences that you're actually interested in.
+Reactive extensions is an extremely powerful API for actually filtering events and getting just the sequences that you're actually interested in. It also can combine sets of sequences and so on and so forth. Reactive extensions really deserve its own course to talk about all different features. The central premise is simple you have a central component and everyone communicates through that components.
 
 ### Some additional notes
 
-Make things easier, it's 01:04am and I'm not interested in more headaches. So just:
+Make things easier, it's 01:04am and to be frank I'm not interested in more headaches. So just:
 
 - Create a `.vscode` folder for you project (use the Run and Debug panel available in Visual Studio Code available when install the Java extension)
 - Download the jars necessary for reactx
