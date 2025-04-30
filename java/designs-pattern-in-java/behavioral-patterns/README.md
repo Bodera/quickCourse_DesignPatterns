@@ -11,3 +11,4 @@ Suggested order to follow the lessons on this chapter:
 - [Null Object](./Null-Object/README.md)
 - [Observer](./Observer/README.md)
 - [State](./State/README.md)
+- [Strategy](./Strategy/README.md)
