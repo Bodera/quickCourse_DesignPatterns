@@ -12,3 +12,4 @@ Suggested order to follow the lessons on this chapter:
 - [Observer](./Observer/README.md)
 - [State](./State/README.md)
 - [Strategy](./Strategy/README.md)
+- [Template Method](./Template-Method/README.md)
