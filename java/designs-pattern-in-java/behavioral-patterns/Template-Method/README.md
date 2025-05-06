@@ -1,5 +1,7 @@
 # Template Method
 
+> A high-level blueprint for an algorithm to be completed by inheritors.
+
 The template method design pattern is a way to define a skeleton for an algorithm in a super-class, but then let subclasses override specific steps of the algorithm without changing its structure. It is all about providing high level blueprints of an algorithm to be completed by its inheritors. We've sawn something like this already in the strategy design pattern.
 
 - Algorithms can be decomposed into common parts + specific parts

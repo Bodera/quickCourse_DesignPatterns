@@ -1,5 +1,7 @@
 # Strategy
 
+> System behavior partially specified at runtime.
+
 The strategy design pattern allows you to partially specify the behavior of the system and then augment it later on at runtime. That may sound a bit cryptic, let's explore it further.
 
 Many algorithms can be decomposed into higher and lower level parts. Let's take the 'making a tea' task for example, it can be decomposed into the following:
