@@ -24,3 +24,11 @@ Suggested order to follow the lessons on this chapter:
 - Reflective visitor
 - Classic visitor (double dispatch)
 - Acyclic visitor
+
+## Summary
+
+The idea consists in having an `accept()` method that gets propagated throughout the entire hierarchy. Then, you make a _visitor_, which has lots of these `visit()` overloads for each element in the hierarchy. Finally, each `accept()` simply calls `visitor.visit(this)`.
+
+That's how the overload is possible, and we deal with this idea of dispatch, because essentially you cannot overload on a single argument and have the runtime somehow figure out what we meant. It really lets us get away with strong typing.
+
+We've also looked at the acyclic visitor, which allows greater flexibility at a cost to performance due to type checks.
