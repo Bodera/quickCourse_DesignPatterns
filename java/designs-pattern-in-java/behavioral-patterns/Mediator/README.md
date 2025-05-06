@@ -1,5 +1,7 @@
 # Mediator
 
+> Facilitates communication between components.
+
 The mediator design pattern facilitates the communication between components by letting the components being unaware of each of other's presence or absence in the system. The motivations for learning this design pattern is essentially that components may go in and out of a system at any time.
 
 - Chat room participants

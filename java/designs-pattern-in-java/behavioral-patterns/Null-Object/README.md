@@ -1,5 +1,7 @@
 # Null object
 
+> A behavioral design pattern with no behaviors 😅
+
 In this section we're going to talk about the null object pattern. This pattern is not present in the Gang of Four Design Patterns book but, it's sufficiently important for us to discuss it. It's classified as a behavioral design pattern even though this pattern doesn't really have any behaviors.
 
 Imagine a situation where you have components `A` and `B`, and component `A` uses component `B`. Typically, there is an assumption that `B` is non-null. If you're using dependency injection, what you do is to inject an instance of `B` instead to inject some `Optional<B>` type. Similarly, when you use `B` you don't do a null check on every single call you make, what makes sense.

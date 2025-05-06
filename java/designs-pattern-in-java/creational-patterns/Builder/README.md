@@ -1,5 +1,7 @@
 # README
 
+> When construction gets a bit too complicated.
+
 Suggested order to follow the lessons on this chapter:
 
 - Builder Introduction

@@ -1,5 +1,7 @@
 # State
 
+> Fun with finite state machines.
+
 In this section of the course we're going to take a look at the state design pattern. So you might think - "Hold on, every object, or most objects, have state in their fields so why are we even discussing it?" = In the representation of the Gang of Four this design pattern basically suggests that the state of the system kind of controls the way that it operates and, it also ties this idea of states machines, or finite machines.
 
 As a motivation behind using the state design pattern consider an ordinary telephone, what you can do with a telephone typically depends on the current state of the telephone as well as the line. For example, if the telephone is ringing or if you want to make a call, you need to pick up the phone. That's a requirement to be able to actually respond to somebody or to actually make a call somewhere. The phone must be off the hook to talk to somebody or make a call. And if you try calling someone, and the line is busy, then you put the handset down.

@@ -1,5 +1,7 @@
 # README 
 
+> A design pattern everyone loves to hate... but is it really that bad?
+
 Suggested order to read those chapters:
 
 - [Presenting the pattern](./Singleton.md)
@@ -15,8 +17,8 @@ Suggested order to read those chapters:
 
 ## Summary
 
-First of all we saw that making a safe Singleton, and with safe I mean that kind of lazy thread safe construct, is fairly easy by just using diamond operators on a static instance of `Lazy<T>` and then returning it's value.
+First we saw that making a safe Singleton, and with safe I mean that kind of lazy thread safe construct, is fairly easy by just using diamond operators on a static instance of `Lazy<T>` and then returning its value.
 
-Second we saw that Singletons are difficult to test, and if you hardcoded Singletons into your designs it's going to be really difficult for you to change it to something else later on. That's why you should follow the dependency inversion principle which means that instead of depending on a concrete implementation of a singleton like `MySinglenton.getInstance()` you should depend on a abstraction, so your components which need a singleton should take an argument perhaps of an interface type so that instead of the singleton that you're originally feeding you can feed them with something else.
+Second we saw that Singletons are difficult to test, and if you hard-coded Singletons into your designs it's going to be really difficult for you to change it to something else later on. That's why you should follow the dependency inversion principle which means that instead of depending on a concrete implementation of a singleton like `MySinglenton.getInstance()` you should depend on an abstraction, so your components which need a singleton should take an argument perhaps of an interface type so that instead of the singleton that you're originally feeding you can feed them with something else.
 
-Finally you should really consider defining a singleton lifetime not explicitly in that component but instead doing it in a dependency injection container.
+Finally, you should really consider defining a singleton lifetime not explicitly in that component but instead doing it in a dependency injection container.

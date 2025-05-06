@@ -1,5 +1,7 @@
 # Iterator
 
+> How traversal of data structures happens and who makes it happen.
+
 This design pattern is designed specifically to help you traverse data structures, to help you walk data structures and iterate their elements. The motivation for using the iterator is because traversal is a core functionality of various data structures, a tree for example, there are different ways of traversing that three and so you can build different iterators for exactly this purpose.
 
 An `iterator` is just a class which facilitates that traversal. Typically, what the Iterator does is to keep reference of the current element that you're actually kind of "sitting on" and it knows how to move to a different element.

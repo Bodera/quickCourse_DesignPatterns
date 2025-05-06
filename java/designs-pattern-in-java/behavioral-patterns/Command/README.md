@@ -1,5 +1,7 @@
 # Command
 
+> You shall not pass!
+
 Essentially ordinary Java statements are perishable, which means that you can't just go ahead and undo a field assignment, you just did it because nobody bothered to save the previous value. So the very idea of undoing something like a field assignment is pretty much impossible. We can't directly serialize a sequence of actions like a series of field assignments, or a series of method calls. There is no way to serialize that structure into a chunk of memory that you can subsequently roll back.
 
 What you want is really some sort of object-oriented representation of an *operation*. So for example we use an object to represent the idea that `X` should change its field `Y` till the value `Z`, or use an object to represent the idea that `X` should now call its member method `w()`.

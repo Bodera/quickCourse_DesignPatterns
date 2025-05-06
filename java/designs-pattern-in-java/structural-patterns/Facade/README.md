@@ -1,5 +1,7 @@
 # Façade
 
+> Exposing several components through a single interface.
+
 Façade is all about exposing several components through a single interface, making things convenient for the end user.
 
 Let's take a house for example. Essentially a house is a system which tries to balance complexity on the one hand because, it's built upon fairly complicated systems, and on the other hand it has to have both usability/presentation which means, when you're buying a house you're essentially buying the way the house looks and how usable it is for your liking.

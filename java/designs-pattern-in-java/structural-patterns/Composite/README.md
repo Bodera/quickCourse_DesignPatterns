@@ -1,5 +1,7 @@
 # Composite
 
+> Treating individual and aggregate objects uniformly.
+
 This pattern has a simple and very noble goal. It allows us to treat individual or scalar components as well as aggregate objects or collections components uniformly, so both of these can be treated in the same fashion. Now the question is why do we want this in the first place?
 
 We know that objects can generally use other objects fields or methods through just two different mechanisms: either inheritance or composition. Composition is a principle which states that an object *has* another, enabling us to make compound objects, grouping objects together.

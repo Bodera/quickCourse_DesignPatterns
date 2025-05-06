@@ -1,5 +1,7 @@
 # Adapter
 
+> Getting the interface you want from the interface you have.
+
 Now that we're ready to move on structural design patterns let's first see the _Adapter_ which concept is very simple. Is all about getting the interface that you want from the interface that you were given by some system or other.
 
 So the typical representation of an _Adapter_ is just the same as you have in power adapters.

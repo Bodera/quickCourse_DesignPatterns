@@ -1,8 +1,10 @@
 # Chain of responsibility
 
+> Sequence of handlers processing an event one after another.
+
 To grasp what this pattern is all about let's imagine a situation where you're working Volkswagen and you decide that whenever somebody does emission tests on your cars your computer is not going to lie, so they're going to reduce the toxic output so that everybody thinks your cars are the most environmentally friendly.
 
-This is clearly unethical behaviour, and the question is who actually takes the blame for this? And it typically goes up the chain:
+This is clearly unethical behavior, and the question is who actually takes the blame for this? And it typically goes up the chain:
 
 - You can blame an employee
 

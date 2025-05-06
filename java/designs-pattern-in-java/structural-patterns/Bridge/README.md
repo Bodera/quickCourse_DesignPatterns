@@ -1,5 +1,7 @@
 # Bridge
 
+> Connecting components together through abstractions.
+
 The bridge design pattern is all about connecting components together through abstractions. The motivation for building a bridge is to prevent what is called a *Cartesian Product* complexity explosion.
 
 Let's suppose there is some base class called `ThreadScheduler` ok? It can be preemptive or cooperative, and it can also run on Windows or Unix. You may end up with a 2x2 scenario if you decide to implement four classes: `WindowsPTS`, `UnixPTS`, `WindowsCTS`, `UnixCST`.

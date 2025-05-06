@@ -1,5 +1,7 @@
 # Memento
 
+> Keep a memento of an object's state to return to that state.
+
 The goal of the memento design pattern is to keep some sort of _token_ which then allows you to return an object to a particular state.
 
 The motivations to learn this pattern is for example you have some object or a set of components that goes through changes like a bank account which gets deposits and withdrawals. As a consequence, there are different ways of navigating those changes. One way is to record every change using a _Command_ and teach the command to undo and redo the changes. Another approach is to simply save the snapshots of the system at particular points in time and them allow the user to roll back the system to a particular snapshot.

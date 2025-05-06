@@ -1,5 +1,7 @@
 # Decorator
 
+> Adding behavior without altering the class itself.
+
 What is the motivation for using a decorator?
 
 First you want to augment existing objects with additional functionality. So you already have classes defined, and you want additional functionality in those classes, but you don't want to go into those classes and somehow rewrite them or change their existing code because that would break the __Open Closed Principle__, and also you want to maybe keep the new functionality entirely separate which is consistent with the __Single Responsibility Principle__. However, you do want the constructs that you end up with to interact with existing structure somehow, you do want to decorate that object to be compatible with an API that uses the old object.

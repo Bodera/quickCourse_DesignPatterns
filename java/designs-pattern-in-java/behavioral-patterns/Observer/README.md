@@ -1,5 +1,7 @@
 # Observer
 
+> I always feel like somebody's watching me
+
 The motivation to learn the observer design pattern is quite simple, we need to be informed when certain things happen. For example, you have an object, and you want to be informed when an object's field changes, or when some object does something that worth to be aware of, or in case some external event occurs outside your system.
 
 So what you want to do is to listen to those events and be notified when those events actually occur. The old-fashioned kind of Java approach for doing so is by adding some listening pattern like an `addFooListener()` method, and then you add the listener to the object to notify the listeners when the event occurs. But, nowadays, Java is a lot more flexible, and it's a lot easier to actually build _observers_ and _observables_. Java now has a **functional objects**, so if you want some action to occur you can ramp that action in a `Supplier<T>`, or a `Consumer<T>`, or a `Function<T>`, then you store those objects in an array and fire them whenever necessary.

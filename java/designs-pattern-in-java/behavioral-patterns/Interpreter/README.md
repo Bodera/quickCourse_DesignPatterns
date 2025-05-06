@@ -1,5 +1,7 @@
 # Interpreter
 
+> Interpreters are all around us. Even now, in this very room.
+
 The interpreter design pattern is everywhere, if you're a programmer you see the interpreter design pattern almost every day.
 
 This design pattern is actually a reflection of an entire field of computer science called compiler theory, and we could spend another 10 hours discussing the ins and outs of building compilers and parses and so on and so forth, but we're going to keep it simple.
